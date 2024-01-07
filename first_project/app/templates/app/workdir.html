@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p style="color: indigo; font-size: 24px">Cодержимое рабочей директории</p>
+<ul> {% for i in view %}
+    <p>{{i}}</p>
+{% endfor %}
+</ul>
+<a href="{% url 'home' %}">< На главную страницу</a>
+</body>
+</html>
